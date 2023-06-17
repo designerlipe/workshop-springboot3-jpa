@@ -17,6 +17,8 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "tb_order") //annotion para evitar conflito com nome da classe
 public class Order implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
