@@ -24,4 +24,8 @@ public class UserService {
 		return obj.get(); /* A operação get do optional vai 
 						 retornar um objeto do tipo user q estiver lá dentro*/
 	}
+	
+	public User insert(User obj) {
+		return repository.save(obj);
+	}
 }
